@@ -178,7 +178,8 @@ final class ApiTest extends ClientTestCase
     {
         $methods = API::supportedMethods();
 
-        self::assertCount(14, $methods);
+        self::assertCount(15, $methods);
+        self::assertContains('orderCoupon', $methods);
         self::assertContains('importOrder', $methods);
         self::assertContains('confirmPaypal', $methods);
         self::assertNotContains('get', $methods);

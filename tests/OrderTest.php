@@ -80,6 +80,25 @@ final class OrderTest extends ClientTestCase
         $this->assertRequest('/order/qa/', ['orderId' => '123', 'qaStatus' => 'APPROVED']);
     }
 
+    public function testOrderCoupon(): void
+    {
+        $this->client()->orderCoupon([
+            'campaignId' => '7',
+            'couponCode' => 'COUPON30',
+            'product1_id' => '9',
+            'product1_qty' => '1',
+            'shipCountry' => 'US',
+        ]);
+
+        $this->assertRequest('/order/coupon/', [
+            'campaignId' => '7',
+            'couponCode' => 'COUPON30',
+            'product1_id' => '9',
+            'product1_qty' => '1',
+            'shipCountry' => 'US',
+        ]);
+    }
+
     public function testConsecutiveCallsDoNotLeakTheEarlierParameters(): void
     {
         $client = $this->client();

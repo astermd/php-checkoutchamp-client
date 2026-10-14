@@ -152,4 +152,26 @@ final class Order extends CheckoutChamp
         $this->fields  = $params;
         $this->sendPost();
     }
+
+    /**
+     * Price a coupon code against a set of products without placing an order.
+     *
+     * Answers `{"priceDiscount": <dollars>, "shipDiscount": <dollars>}`. An
+     * unknown code is not an error: it answers SUCCESS with both amounts zero,
+     * exactly like a real code worth nothing on these products. An expired
+     * code answers ERROR "Coupon is expired".
+     *
+     * POST /order/coupon/
+     *
+     * @param array<string, mixed> $params
+     *
+     * @return void
+     */
+    public function orderCoupon(array $params = []): void
+    {
+        $this->section = 'order';
+        $this->method  = 'coupon';
+        $this->fields  = $params;
+        $this->sendPost();
+    }
 }

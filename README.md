@@ -160,6 +160,7 @@ sent as query string parameters.
 | `importUpsale(array $params = [])` | `POST /upsale/import/` |
 | `confirm(array $params = [])` | `POST /order/confirm/` |
 | `qa(array $params = [])` | `POST /order/qa/` |
+| `orderCoupon(array $params = [])` | `POST /order/coupon/` |
 
 ### Campaigns
 

@@ -29,6 +29,7 @@ use AsterMD\CheckoutChampClient\Logging\DebugLogger;
  * @method self importUpsale(array<string, mixed> $params = [])
  * @method self confirm(array<string, mixed> $params = [])
  * @method self qa(array<string, mixed> $params = [])
+ * @method self orderCoupon(array<string, mixed> $params = [])
  * @method self campaignQuery(array<string, mixed> $params = [])
  * @method self customerQuery(array<string, mixed> $params = [])
  * @method self addnote(array<string, mixed> $params = [])
@@ -54,6 +55,7 @@ final class API
         'importUpsale'      => Order::class,
         'confirm'           => Order::class,
         'qa'                => Order::class,
+        'orderCoupon'       => Order::class,
         'campaignQuery'     => Campaign::class,
         'customerQuery'     => Customer::class,
         'addnote'           => Customer::class,
