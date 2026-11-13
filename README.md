@@ -1,3 +1,7 @@
+<p align="center">
+  <a href="https://www.astermd.com/"><img src="https://raw.githubusercontent.com/astermd/php-checkoutchamp-client/main/.github/assets/astermd-logo.svg" alt="AsterMD" height="48"></a>
+</p>
+
 # astermd/checkoutchamp-client
 
 A small, dependency-free PHP client for the Checkout Champ API — orders, leads,
@@ -8,7 +12,7 @@ request logging that is redacted by default.
 > Checkout Champ PHP SDK and is not affiliated with, endorsed by or supported by
 > Checkout Champ. "Checkout Champ" and related marks belong to their owner,
 > <https://checkoutchamp.com/>. The name is used here only to identify the API
-> this library talks to. See [LICENSE](LICENSE) for the full notice.
+> this library talks to. See [NOTICE.md](NOTICE.md) for the full notice.
 
 API reference: **<https://apidocs.checkoutchamp.com/>**
 
@@ -374,8 +378,8 @@ this suite makes a network call.
 
 ## Support
 
-Email **info@astermd.com**, or open an issue at
-<https://github.com/astermd/checkoutchamp-client/issues>.
+Email **hello@astermd.com**, or open an issue at
+<https://github.com/astermd/php-checkoutchamp-client/issues>.
 
 Report security issues privately — see [SECURITY.md](SECURITY.md). Do not open
 a public issue for a vulnerability.
@@ -394,4 +398,6 @@ places the systems handling those requests — and anything that logs their URLs
 
 ## License
 
-MIT — see [LICENSE](LICENSE), including the trademark and affiliation notice.
+MIT — see [LICENSE](LICENSE). The trademark and affiliation notice is in [NOTICE.md](NOTICE.md).
+
+Maintained by [AsterMD](https://www.astermd.com/). Contact: hello@astermd.com

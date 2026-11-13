@@ -16,13 +16,13 @@
     "authors": [
         {
             "name": "AsterMD",
-            "email": "info@astermd.com"
+            "email": "hello@astermd.com"
         }
     ],
     "support": {
-        "email": "info@astermd.com",
-        "issues": "https://github.com/astermd/checkoutchamp-client/issues",
-        "source": "https://github.com/astermd/checkoutchamp-client"
+        "email": "hello@astermd.com",
+        "issues": "https://github.com/astermd/php-checkoutchamp-client/issues",
+        "source": "https://github.com/astermd/php-checkoutchamp-client"
     },
     "minimum-stability": "stable",
     "prefer-stable": true,
